@@ -185,7 +185,7 @@ class DQN2048Solver():
 
 
     def run(self):
-        scores = deque(maxlen=100)
+        scores = deque(maxlen=5)
 
         for e in range(self.n_episodes):
             state = self.env.reset(e)
